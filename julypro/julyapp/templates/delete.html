@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>delete</title>
+</head>
+<body>
+<form action='' method=POST> {% csrf_token %}
+First Name : {{b.first_name}}
+<br></br>
+Last Name : {{b.last_name}}
+<br></br>
+Email ID : {{b.email1}}z
+<br></br>
+<input type = 'Submit' value="DELETE">
+<a href="/list">DON'T DELETE</a>
+<br></br>
+</form>
+<a href="/list">VIEW ALL</a>
+</body>
+</html>

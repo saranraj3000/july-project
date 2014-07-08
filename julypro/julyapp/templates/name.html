@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>name</title>
+</head>
+<body>
+<form action = '' method=POST>
+{% csrf_token %}
+<br></br>
+<i>Your First Name : </i><input type 'text' name='firstname'>
+<br></br>
+<i>Your Second Name : </i><input type 'text' name='lastname'>
+<br></br>
+<i>Your Email ID : </i><input type='text' name='email'>
+<br></br>
+<input type = 'Submit' value="SAVE">
+<br></br>
+<a href="/list">VIEW ALL</a>
+</form>
+<br></br>
+{% if name %}
+{% for i in b %}
+Hi, Your Name is {{i}}<br>
+{% endfor %}
+<br>
+{% endif %}
+<br></br>
+<a href=".">Index</a>
+<br></br>
+<a href="/name">Name Details</a>
+</br></br>
+<a href="https://www.google.co.in">Google</a>
+<br></br>
+<a href="http://saranraj3000.blogspot.in/">Saran Page</a>
+</body>
+</html>

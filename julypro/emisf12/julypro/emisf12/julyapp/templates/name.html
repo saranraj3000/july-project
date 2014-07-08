@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>name</title>
+</head>
+<body>
+<form action = '' method=POST>
+{% csrf_token %}
+<br>
+</br>
+Your First Name    : <input type 'text' name='firstname'>
+<br>
+</br>
+Your Second Name : <input type 'text' name='lastname'>
+<br>
+</br>
+Your Email ID : <input type='text' name='email'>
+<br>
+</br>
+<input type = 'Submit' value="SAVE">
+</form>
+<br>
+</br>
+{% if name %}
+{% for i in b %}
+Hi, Your Name is {{i}}<br>
+{% endfor %}
+<br>
+{% endif %}
+</body>
+</html>

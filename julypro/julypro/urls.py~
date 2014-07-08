@@ -1,0 +1,14 @@
+from django.conf.urls import patterns, include, url
+from julyapp import views
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    # Examples:
+    url(r'^$', 'julyapp.views.homepage', name='home'),
+    url(r'^mainpage$', 'julyapp.views.mainpage', name='new'),
+    url(r'^hello$', 'julyapp.views.hello', name='hello'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^adminlogin/', include(admin.site.urls)),
+)

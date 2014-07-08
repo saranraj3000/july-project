@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edit page</title>
+</head>
+<body>
+<form action='' method=POST> {% csrf_token %}
+First Name : <input type 'text' name='firstname' value={{b.first_name}}>
+<br></br>
+Last Name : <input type 'text' name='lastname' value={{b.last_name}}>
+<br></br>
+Email ID : <input type 'text' name='email' value={{b.email1}}>
+<br></br>
+<input type = 'Submit' value="SUBMIT FOR CORRECTION">
+<br></br>
+</form>
+<a href="/list">VIEW ALL</a>
+<br></br>
+</body>
+</html>

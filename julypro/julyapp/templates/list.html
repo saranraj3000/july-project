@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list</title>
+</head>
+<body>
+{% for i in b %}
+{{i}}<a href="/edit/{{i.id}}">     EDIT  </a><a href="/delete/{{i.id}}">     DELETE  </a><br>
+{% endfor %}
+<br></br>
+<a href="/name">Name Details</a>
+</body>
+</html>

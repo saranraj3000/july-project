@@ -1,0 +1,11 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def homepage (request):
+    return HttpResponse ("This is Saran's First Webpage")
+def mainpage (request):
+    return HttpResponse ("Hi, How Are You ?")
+def hello (request):
+    return HttpResponse ("Hello World")
+def hello1 (request):
+    return HttpResponse ("Hi Saran")
